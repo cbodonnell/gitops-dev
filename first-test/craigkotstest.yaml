@@ -1,0 +1,128 @@
+apiVersion: v1
+data:
+  ENV_VAR_1: fake
+  ENV_VAR_2: faker
+kind: ConfigMap
+metadata:
+  annotations:
+    kots.io/app-slug: craigkotstest
+  labels:
+    kots.io/app-slug: craigkotstest
+    kots.io/backup: velero
+  name: example-config
+---
+apiVersion: v1
+data:
+  .dockerconfigjson: eyJhdXRocyI6eyJwcm94eS5yZXBsaWNhdGVkLmNvbSI6eyJhdXRoIjoiTWpWclJVWnpaVU5WYTFOMGVrYzVhM0kwV1d4ak1YbFNPWEZaT2pJMWEwVkdjMlZEVld0VGRIcEhPV3R5TkZsc1l6RjVVamx4V1E9PSJ9LCJyZWdpc3RyeS5yZXBsaWNhdGVkLmNvbSI6eyJhdXRoIjoiTWpWclJVWnpaVU5WYTFOMGVrYzVhM0kwV1d4ak1YbFNPWEZaT2pJMWEwVkdjMlZEVld0VGRIcEhPV3R5TkZsc1l6RjVVamx4V1E9PSJ9fX0=
+kind: Secret
+metadata:
+  annotations:
+    helm.sh/hook: pre-install,pre-upgrade
+    helm.sh/hook-weight: "-9999"
+    kots.io/app-slug: craigkotstest
+  creationTimestamp: null
+  labels:
+    kots.io/app-slug: craigkotstest
+    kots.io/backup: velero
+  name: craigkotstest-registry
+  namespace: cbodonnell
+type: kubernetes.io/dockerconfigjson
+---
+apiVersion: v1
+data:
+  .dockerconfigjson: eyJhdXRocyI6eyJwcm94eS5yZXBsaWNhdGVkLmNvbSI6eyJhdXRoIjoiTWpWclJVWnpaVU5WYTFOMGVrYzVhM0kwV1d4ak1YbFNPWEZaT2pJMWEwVkdjMlZEVld0VGRIcEhPV3R5TkZsc1l6RjVVamx4V1E9PSJ9LCJyZWdpc3RyeS5yZXBsaWNhdGVkLmNvbSI6eyJhdXRoIjoiTWpWclJVWnpaVU5WYTFOMGVrYzVhM0kwV1d4ak1YbFNPWEZaT2pJMWEwVkdjMlZEVld0VGRIcEhPV3R5TkZsc1l6RjVVamx4V1E9PSJ9fX0=
+kind: Secret
+metadata:
+  annotations:
+    helm.sh/hook: pre-install,pre-upgrade
+    helm.sh/hook-weight: "-9999"
+    kots.io/app-slug: craigkotstest
+  creationTimestamp: null
+  labels:
+    kots.io/app-slug: craigkotstest
+    kots.io/backup: velero
+  name: kotsadm-replicated-registry
+  namespace: cbodonnell
+type: kubernetes.io/dockerconfigjson
+---
+apiVersion: v1
+kind: Service
+metadata:
+  annotations:
+    kots.io/app-slug: craigkotstest
+  labels:
+    app: example
+    component: nginx
+    kots.io/app-slug: craigkotstest
+    kots.io/backup: velero
+  name: example-nginx
+spec:
+  ports:
+  - port: 80
+  selector:
+    app: example
+    component: nginx
+  type: ClusterIP
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  annotations:
+    kots.io/app-slug: craigkotstest
+  labels:
+    app: example
+    component: nginx
+    kots.io/app-slug: craigkotstest
+    kots.io/backup: velero
+  name: example-nginx
+spec:
+  selector:
+    matchLabels:
+      app: example
+      component: nginx
+  template:
+    metadata:
+      annotations:
+        kots.io/app-slug: craigkotstest
+      labels:
+        app: example
+        component: nginx
+        kots.io/app-slug: craigkotstest
+        kots.io/backup: velero
+    spec:
+      containers:
+      - envFrom:
+        - configMapRef:
+            name: example-config
+        image: nginx
+        name: nginx
+        resources:
+          limits:
+            cpu: 500m
+            memory: 256Mi
+          requests:
+            cpu: 100m
+            memory: 32Mi
+      imagePullSecrets:
+      - name: craigkotstest-registry
+---
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  annotations:
+    kots.io/app-slug: craigkotstest
+  labels:
+    kots.io/app-slug: craigkotstest
+    kots.io/backup: velero
+  name: example-nginx-ingress
+spec:
+  rules:
+  - http:
+      paths:
+      - backend:
+          service:
+            name: example-nginx
+            port:
+              number: 80
+        path: /
+        pathType: Prefix
