@@ -12,40 +12,6 @@ metadata:
   name: example-config
 ---
 apiVersion: v1
-data:
-  .dockerconfigjson: eyJhdXRocyI6eyJwcm94eS5yZXBsaWNhdGVkLmNvbSI6eyJhdXRoIjoiTWpWclJVWnpaVU5WYTFOMGVrYzVhM0kwV1d4ak1YbFNPWEZaT2pJMWEwVkdjMlZEVld0VGRIcEhPV3R5TkZsc1l6RjVVamx4V1E9PSJ9LCJyZWdpc3RyeS5yZXBsaWNhdGVkLmNvbSI6eyJhdXRoIjoiTWpWclJVWnpaVU5WYTFOMGVrYzVhM0kwV1d4ak1YbFNPWEZaT2pJMWEwVkdjMlZEVld0VGRIcEhPV3R5TkZsc1l6RjVVamx4V1E9PSJ9fX0=
-kind: Secret
-metadata:
-  annotations:
-    helm.sh/hook: pre-install,pre-upgrade
-    helm.sh/hook-weight: "-9999"
-    kots.io/app-slug: craigkotstest
-  creationTimestamp: null
-  labels:
-    kots.io/app-slug: craigkotstest
-    kots.io/backup: velero
-  name: craigkotstest-registry
-  namespace: cbodonnell
-type: kubernetes.io/dockerconfigjson
----
-apiVersion: v1
-data:
-  .dockerconfigjson: eyJhdXRocyI6eyJwcm94eS5yZXBsaWNhdGVkLmNvbSI6eyJhdXRoIjoiTWpWclJVWnpaVU5WYTFOMGVrYzVhM0kwV1d4ak1YbFNPWEZaT2pJMWEwVkdjMlZEVld0VGRIcEhPV3R5TkZsc1l6RjVVamx4V1E9PSJ9LCJyZWdpc3RyeS5yZXBsaWNhdGVkLmNvbSI6eyJhdXRoIjoiTWpWclJVWnpaVU5WYTFOMGVrYzVhM0kwV1d4ak1YbFNPWEZaT2pJMWEwVkdjMlZEVld0VGRIcEhPV3R5TkZsc1l6RjVVamx4V1E9PSJ9fX0=
-kind: Secret
-metadata:
-  annotations:
-    helm.sh/hook: pre-install,pre-upgrade
-    helm.sh/hook-weight: "-9999"
-    kots.io/app-slug: craigkotstest
-  creationTimestamp: null
-  labels:
-    kots.io/app-slug: craigkotstest
-    kots.io/backup: velero
-  name: kotsadm-replicated-registry
-  namespace: cbodonnell
-type: kubernetes.io/dockerconfigjson
----
-apiVersion: v1
 kind: Service
 metadata:
   annotations:
@@ -105,6 +71,52 @@ spec:
             memory: 32Mi
       imagePullSecrets:
       - name: craigkotstest-registry
+---
+apiVersion: bitnami.com/v1alpha1
+kind: SealedSecret
+metadata:
+  annotations:
+    kots.io/app-slug: craigkotstest
+  creationTimestamp: null
+  labels:
+    kots.io/app-slug: craigkotstest
+    kots.io/backup: velero
+  name: craigkotstest-registry
+  namespace: cbodonnell
+spec:
+  encryptedData:
+    .dockerconfigjson: AIAu2iYc3ko9thyX2QbMRiSAvkVImpO0UBDUwHRxfYla9bw9W19ndb2pSvfS7EHz0kX/z+lsO4bLCVLeDIphe+i6V5DYwgR9ro+SQN7SPB7zsjMHtyWykJITR/UKLaBa5xvnBs88KcsZz3pgeNp0nvne/QsOPG4DNK0VEKIXrr9IdHwb+JRejvgt3MbW3PRvHnOal6+0/gutGhDQSdpjK7WdwMOz1BhqEQprY+yz0kbU2WSVn5/RgyogY8ElUrGN9O1f0b4Ttb840cQEwDZUwQs7QI08Z9HDCENZUAAu46jw+ZPhptY/bGWfipGFUPrU/aLvahVEHFoUnB0EPldUVW73Y6K0LecddlcNuHYbj/KglhJ4C3cKBntXlzNWhwDWL5ZSIJzho4kTIcDukyaCuJhVw4jnW11hS/snh/U0hXEqwBarF6sViH5HrVlzjsOrrusLGRQdp5p1uC3kWjk5Y4zc9a7f+jF+bKVZce+2XgyOZuIpWInZLssxzBUzHQ==
+  template:
+    metadata:
+      annotations:
+        helm.sh/hook: pre-install,pre-upgrade
+        helm.sh/hook-weight: "-9999"
+      creationTimestamp: null
+      name: craigkotstest-registry
+      namespace: cbodonnell
+    type: kubernetes.io/dockerconfigjson
+---
+apiVersion: bitnami.com/v1alpha1
+kind: SealedSecret
+metadata:
+  annotations:
+    kots.io/app-slug: craigkotstest
+  creationTimestamp: null
+  labels:
+    kots.io/app-slug: craigkotstest
+    kots.io/backup: velero
+  name: mysecret
+  namespace: cbodonnell
+spec:
+  encryptedData:
+    PASSWORD: AIAvwrr5qudBJVTi2HnnDAHGy44oaOlUFhOhbkQlJRXrNt4w2CpkaGHo8X7MsoduqtuhN9xy1A1zaXU+gXEPnlrWjC2cyg6ZFGlePf6nqUF9E/p/jW3S4IZfOly/GJFxIxz/d6rVCsjJEX34oCfy1lT+kro3qMqkoFS53aHE98MeCNksK96fPBBjeXCOCIG5Mlg1C7O+OfNUtS8iuww=
+    USER_NAME: AIAIz73Qs82VhhJshJYKpmmScb2Ny8WYF7Sc8YTMIEPoJgBwIdKpHG+v8Z6A+htRVOpgZ9koqt+r1wdkdGSRIE6r2+cWh8kb5Tb06a7qzjVtl5H3kPwol65WpjMlFQy7MWf/iemt3XAFH+bdijW3Sw1aXmkBndxUc61bGwBwvtnCfBVPgHSvBOZp144T5w084YlCmaO1tA==
+  template:
+    metadata:
+      creationTimestamp: null
+      name: mysecret
+      namespace: cbodonnell
+    type: Opaque
 ---
 apiVersion: networking.k8s.io/v1
 kind: Ingress
