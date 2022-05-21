@@ -85,7 +85,7 @@ metadata:
   namespace: cbodonnell
 spec:
   encryptedData:
-    .dockerconfigjson: AIBPqnGTbg9x2G6JF3sT4gww6ian6glRkOD5lU8PhCn4ycKKRzU3eBBzA/iuEnFm8c1yJRY7RBizb8xvEfDqOcWNXNGACS1S8OVH/HnTEbopB9f9gESKCjO6Zjzglc9c7qGqbCqmh+RsAI+Akj2+ryKUopWFVi74tOlme9a05FH8pdARba27x0p80TWRl6motvY27ZmXUWfU8c/W1P5GOhHspamG8+3qTwE/WlHlTARk0duSA2itmV593MPuWJyhJHR0Wum4NUl7CDYid/K97DeKdk8xuQ81PQy4zfJrGg3O3V98AGffRoEJA344H+Sw5EFy7mVn2dmQuG6DV0hdcFt3zlqPdJoUh6Tn2CFg9uK6RHsYskH0jNktFoi/jVSYXJO2tvvPxpk/wWl2qoQmZG9wNNtSDij01ruVVwJB7nM4ePVEBAg6EapaIojZBxXzUvLMI9/N1OlKHxdZa8pv5FsQg+byOE3vEsFAgPEGEqzZ7GchRzF+/qEBRmeYoQ==
+    .dockerconfigjson: AICRJfqBpLs8GpOx2rrzyJfjMo6gINqwy/94DJ5EBwYzluXkoh9KHfZtjN7qg2/cMZsd6lzG9JSk7BO8jtQPUXQs8wrb4yP60rzQCwSH2W/za2WZNV/I/jXbVZESayhLyIU1l7jrSkjYyw5c3+BnAjFb/+AwblHynelZftlkujt0AgoXvane43JbkyA3vti47/Z8yY7wPnkl4HMcE/nUa9TBZXLDP9MIUkDHh2Fsr1cdZNpLV/hvsBf4U8RlhmowrSbMEHJJuV0dpVCouSKgvQuADlYtER83mr3LJIY/6p4Pp6jOv7cuFS7RwVU32d5MiBettcmxcaXODJaMy1UeF1TurjtvoyMGaZARgUI3/AnRlR3BmU5zDdpu9o7Gf94wMUtq+4+ZEoLBCHbuxrYQuan6GmKz6UkoN645U5v7TwJ9pJW74Op5BmSmi45NP7vR4fpp6CA0hGwHfxAAIUoDCUQttX/uWYI4EbAbmjy5OVshpaFG2XQztHpMVzSXKQ==
   template:
     metadata:
       annotations:
@@ -93,6 +93,30 @@ spec:
         helm.sh/hook-weight: "-9999"
       creationTimestamp: null
       name: craigkotstest-registry
+      namespace: cbodonnell
+    type: kubernetes.io/dockerconfigjson
+---
+apiVersion: bitnami.com/v1alpha1
+kind: SealedSecret
+metadata:
+  annotations:
+    kots.io/app-slug: craigkotstest
+  creationTimestamp: null
+  labels:
+    kots.io/app-slug: craigkotstest
+    kots.io/backup: velero
+  name: kotsadm-replicated-registry
+  namespace: cbodonnell
+spec:
+  encryptedData:
+    .dockerconfigjson: AIBCYLoi27tHfam4c2RwnpPcJmEDgBfmowvRKyJtESom0aRRPDHf8VAsOGXUf8M+P/RzjoyGp57JCpUGJE6MTpdkzPKC2bt7u3oHVPhek3ortOI2qz9XqRPifr56Nz3692BIxQRukZx2WkjxJOLdR3N1pBRDLk/gcEUJtTkIkov+8H3xuH1lE7Sc1ZBQG5skwLDWS+Gmw9A46PhqxKfeYtEHGyGS6Tguk/8GxJnvFaHR/J0I4HMNFtYKmO6lT5cz+ts9WPDO6EoxSZsLzWrM/YQ/v8TPohCgX42UtTsAM8sIUHnjZH7Fy3YGR8FbqE5J0PI0KDzKzb9VzAgRpzsSTidj1E3hi/IwjiSFsqo1V+8hSjZ6Eu1QLhHeG8ZfsoIqlTQgOBUBsn3INXDMnDqEtOEPa8wp8gpG9Vx9drmiM3vn8FT2D4LMpC3T5Qyke9n0YHW/onG8jLWLEJM6OygYbjBVOBwiEgZDW6i7zGJ4XpyglTeQB/FbO0aa2q0ejA==
+  template:
+    metadata:
+      annotations:
+        helm.sh/hook: pre-install,pre-upgrade
+        helm.sh/hook-weight: "-9999"
+      creationTimestamp: null
+      name: kotsadm-replicated-registry
       namespace: cbodonnell
     type: kubernetes.io/dockerconfigjson
 ---
