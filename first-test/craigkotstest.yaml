@@ -1,7 +1,7 @@
 apiVersion: v1
 data:
   ENV_VAR_1: fake
-  ENV_VAR_2: faker
+  ENV_VAR_2: more-faker
 kind: ConfigMap
 metadata:
   annotations:
@@ -85,7 +85,7 @@ metadata:
   namespace: cbodonnell
 spec:
   encryptedData:
-    .dockerconfigjson: AIBdV5s6qGVAv/2m6JEHD8M+dOwcTGvAraCqYkjAzktUtF1TDdE2mGix1SAz0/gLYYGYOrL+/z1HK+SoWFcFKXCQnjeDDQ/6GIt7TG+ZQY4CORb8jUGf2MGEGWN/3mChix3pPYAuZRqrLPjR93AvPxenCKYcsSeZskd2UCoDiBq576Mb3TxOLLrkwQDmDGNS+M3f0veVpw4ju0okHMwQ4fqWhK9M5vhNsTmucscuPXJkG4NU/hyo/VQY1O7Fi+0mYjvFlInl3o7aE7diKR/r3W1zUha2FeDEysnmDOH+ic2XlD0fC4b+W+Lew4/ISHTkidP4STYdejW//cNTelivwSIgjTIxnfdNeQiGDM/u2x3Nvw67VvHlzyTDd1evS9jaY33aTxKoOhd7xbtO2OMadlKtZ+zA7FkBK42iKknI+NBdPVKRHt+i9xGY401Xz0Hd1Wb0vs04bLkUbFALojlH7qTesYgRW1GhGCCvZHjKdFAklMJNHC3HWvHXEgykaQ==
+    .dockerconfigjson: AIAGydfTw14uHrk2005M3PnGJ3T4bwfT0BeYwQS281PFhubC37LnYjp/TE55yrhy2qeFVmFD8w/MeUrljVANQ6t9xsPGM7Ij67CYZ1XtUlnXGece0fMGKhD2+sRDQ+Sgx6FsnRv45WZnjqyltrxE/61vgjqu06O/5VnFSsySHTqpGu14yi5NQYGdwfFQD/hjJEAgxRuWemow2w/Qk04kOSK7AMIkvBpgp2D8FQ9GwBrAZIJ0mcXheeEskxGUpoC9I3Y5OjSHDUhIlNbeQ9Yp3hz6BL757nK7qhVFTJ2xdHannQ7euFAcWluXtIguzUupKG7QRfBxglhqAoBiUFa2W5iSIXFJ2AXSENdwpm8to96KjTmnuOVxVTTD1Za1zEiMkNViR4LjnJRENKDZMaTCuN9gziG+3kkBY7MQ810N7mSc6reMnSJkw6Ag7snIEFXHI5Dd6fi3PRcNbfbnV9XIgsLVsAijl6Wnbq/hiqOkSOkS0wHw28L991Lfdyv42Q==
   template:
     metadata:
       annotations:
@@ -109,7 +109,7 @@ metadata:
   namespace: cbodonnell
 spec:
   encryptedData:
-    .dockerconfigjson: AIBgDkUMsRE5WIdaJr90Spbxr+qOtJ/+5fVKLPbzOLCYR5t2mNHtgT/BtYBLH9pnO5Nqg29Xe3tgIw7YtIoXtUAQZV5oNTUGkeH9GaTen7R4usO+dAVIMrFQm76TCoebhn0AM/3InUIHqKTR0pdYhqhyCuqdp76bpBiKZvzz2dudK3vvJhlS1DAta6d39/C1J7CVfp+oIwwpYl5JIWtnF7Yrm0+QMbIJ845tClj5jZxVwrgP5UdsQN9TXT06GB3BRANsb5xMqTTvXbGbA9HJ2obpuoXoB2xabC/LG/25Hn7srQ+ORZSXy23aeeKn1vQEkA3jJOL1zdVs3iiFb4W9vgzotwLgxrQKBdMiormaS6AWNJ4J7JjlraZSFAiGz/sSoSgZL2QH2jVtsNdmSqwMJ/gpVLhP9dNpMRcPvu1BPgejlrwH8MeTkkaryHRywGE7I8NfAR+6GSlFIEGDcQlGAYRcJAMK0+/2D8/DR1SP48cfW1PLTKcz2Wuf8n5X9Q==
+    .dockerconfigjson: AIAYXzEEnM1SECMVf5xeb/fwL4EIHnGiyLpNapTRWpBpcxAqAm1zSjnxAu7j4lxHghBrNNdMnhlYkJwXIqwWGPbjNQbTnLVCJLFTgnM2hQRQVaqVNuEyVIqc5Z3tqhrlXHxrMo+xiF0lxHQ1TlcvQ27sQpZv+eRvwYd/QTh+ozZbmLt4pphXtTXh4iFNvF9iiCr7j0Tab1WmPQ1VzHdYVaxfksFXYoUkTZAEEke4aDOTWk2zmglZYYU9mm7Tbq15KvIn+zNcxhvUu7X6MJy0whd2r3t62iAJr8ubtIE+/s06UDENW00zMAqsTZCPnxErrFBrOzsLieJ4jYsdpo04IfezEVNDQmSj7TqTR+I8widyq7gC9sKYFXAR0IINj1iYvd2jKxAedU1Eb2sD6MqcJ5nP8GjE7wBezypAIn0GU1P8hpzud5wQHJKNVWd1956ZlVhS08yPtCsJFpzmMdV+KZ7rnCrOu8VSetkWckMdSqEUScb5HgtECpV9Vo3P3Q==
   template:
     metadata:
       annotations:
@@ -133,8 +133,8 @@ metadata:
   namespace: cbodonnell
 spec:
   encryptedData:
-    PASSWORD: AIBJkZQbUNB6sK1OxCIsO2ypBpS9OvMNyVaUU0F3W7aH8Lw2hHz2Q08WNro9JvKqiGneavtuhOSsRm+okAzE1X0od7Ld3E0OooOTGBnPdxE5dh+xORPQcGjOXOaVnqFum6Dngu+k8c47K8Zi+yGs6Adwsn6sXxxSJANbY5TiFyqRTlNgEZG+S1IT4hs88bu0JTh1ax8b2ZFkI0qQgyk=
-    USER_NAME: AIBv2XkUxEVTL8nhHQ5Gi43MmOEkxo0y1/eI52tPeVpsohySter5xRyow+eXAV1MHUTnO/Qlvh7S7x6xlA6sdu3rlyNsDv7LKb7M9TXHOk0lWHYnSvYkx6H1BXPiIRMVdZfLM0LOKqJ/3nCkS3fHBstim9WCvgv7zfNszs3j+RiHDhz8WldC8AbKpbMLxDRQUHOR5hChqA==
+    PASSWORD: AIBoKjm488bIaJL4an90eRlxPHpjh072qlPoiT+TXQs2qqTuqSB9iXT7Jmpyoi47sC5UEqYNR+hl/SSdgMF3XnMRL1JflYYaU0FPEfrZNszzfmYhFNKNLnPJ55m3KMFbWi2qIfw8ZSDl84px2/3VOPZhsFIEnKFo/+z03lszRcz+JqMJwwWxzkyPZsC0WfCSBn+MkTlrIkhTuHl/jZ0=
+    USER_NAME: AIAqM4Hrl/Fv/nJu7cKAdp6FUEwYLgLTqE3W1ObP8z3aLoKD0ZKHH0pLhelPtiDJnN3Jy/QBP9hINDd07NZKa1Oe5jDw7Q3P2E5rRu+L4GMYmo44I7nnwkXjxY4lH57SOx0TH58/7MPkMBQucqy2xZTIfWGXEez73NBlyWJTwPfFirZ9/Xc3/4O1RJ4BbD9bMBg4H6Elsg==
   template:
     metadata:
       creationTimestamp: null
