@@ -85,7 +85,7 @@ metadata:
   namespace: cbodonnell
 spec:
   encryptedData:
-    .dockerconfigjson: AICQnie9jrhL29TcCSSkcOXBh7r0p3MJAfNSWLLyo5q7bLanV1rOaXa0Gbk2mkYcc3FMs6vc9BrzgYqp8bYW80WKznecZH7frLqhaI5cLUJjzyq+0xwUf38Jrp55Rp+2VQ5OmTWQhZYBvztapJBqSoaPAUh6tE97mlUBVGqSOfCyI2Pro8vmXb9FlQrrRbRPplPpjcJEap89rWHOel1iaK2+onOHN9JmrXuUnCCPMlTWMS8hcKX1BPlZ2d/qo9FIWlMgpQ0O5dkj3uRlAKMY888+GyZeOHcD7fq+BYw/wEpZbEahB1YdQXvnDJUlHyDi37hTPq97IyKHO04wRyPhIdl5qVqEdqcdVfhI8MahZy+i314ojjJKPaXBdiI20M1n6jR2JHAqmFrREnf/niWoa7IcvogwLVD4HWH1DYfKxaBdJtK1Jd9MRiD9a8st4NiEM3DY6YPYdPw1Pd99Hr7vEKO9nlI6dxlpycdS8AEiKbPSLfkQQp9ZfQzyziMq7Q==
+    .dockerconfigjson: AICKtReKw6OGos5a1wEcaTS3aDW4BZhmRD+IpQBYNXNNXXB5OJJe2T7OPw7P3G5KbpOgwx46it2f49jkm+Hr5FiMl+olsCMf4ly0H3gxxJlOCdot93bDeShkFuf2vNNMdIfLlS2h+8NZgicSGedVlob11Sb8R4R+jRTS4hffG8lIhPHWB6sEQzO4geXf6LLVxUwI9Ry9Xyte4l2Fo9zH2w05v1bGLlqXxGiKp93vlqlcV5258LERIxEO/gxc5BHokmWBxcY+wbdT6DMbh9A/kyucH5f22YTDbl2Hdr0C+FFeEG6lSaqPoQX6Jj74K9stAoqQ+CroO1aPe2NHXkT++LobPMpc1R7xECHDJjtDs85gnjYP41BTXI6hyxLgnfAYznxAk87kYLiwgeGunOR8f50+M4FAYcKlWSoVrVBioSkIHD7nzhWr2s7OPeBr3Czh2LcbZFhEqgWDNtQ9oLSsmygMiIfJreIl+m0m9MuoefVW+x3rBVTkkwl+z56ysw==
   template:
     metadata:
       annotations:
@@ -109,7 +109,7 @@ metadata:
   namespace: cbodonnell
 spec:
   encryptedData:
-    .dockerconfigjson: AIA0ZHwv5LH37h6vhNVtrdSG8pGIlD3rPYDA3zqSHXmn28xie4/QZDoQwFznssHfk5C3MHCfG4Zelbm4C67j+nry24YeMAP5nE68QvvjOkp7Tvl7cFRMa58+pvmbgfS0EkHst+F1srk2ZfamHkwI3VtEgHbKu7VTzGi/DGfDpJVuFsF89Y3gL4PxdkqeBjHYTGYYOjq2JjXY6cYIebz3yqUBe94uj8GG8zso8l4/T65zcY+rvJ3QT9a5NVIuZycyekOaIPYRZEfzxRQXEN/ay1k4rpsphRTPvzu+0NUrCKUxzcA1en4uwDYYctE+h4Ipgkn0WbrA42lUpXQq90GgDwTV7y5zYUhCe2sLusGuZm7XGw3Zz+SmyWcPUCcJtsjr/zCcoVHcdFPltMKvMauNF+kuWNH1Pw0JAZU3bMPN37eBp0Ee1i+mwMVf7+5o33edlVIyUvkEdwIQDs9yfRRZYdRu2qY8+OrxpxM/szV36TFX5fXhXBViyIGoBaghVA==
+    .dockerconfigjson: AICvJL/O7CLUmckIvdIcNzsSX9HkKBNrxiu8Icm7MokvSoWx0NryB5GA05qjQmEc3gsGzYEXd48mT/OtuHhKiULKf6hwBuPEZxi4ESJ0z5k7vhJmtdva82YTtufQ/yMve3qMCkPJfQ4uIqMZYneTA5RPsfbjaOOjfo/dYKF+om7PsbegnjectGrgo2cKNpfrKC+2qGvTzw8+gwqiddJzr9dyOj5L0fR9T/bPAV/NPtnO6EKTBbt895GjnqIXpvOrUCN8FlY9Ib87yyzUMfPLR+HKE06TQv16dA8MAX/xqx36prwkAKFyWrGfmK83J/XaHTDH0W6UYviV+jSEz+KT1ij3abUV6RdpxmC9NDKk/hHW3t+mhNivNXiudpHsE2meigmFrCfnLFKNzRFQxLoMd+Kl5SyePpN+nzhzHSuhr10RJbY5FT8g9bgSsbe3FspKtqpyW+5GQZErhk7MybLVYl4+szVSIEiBtznI28bfQF/8g3HzGMtbeZUEz4+luw==
   template:
     metadata:
       annotations:
@@ -133,8 +133,8 @@ metadata:
   namespace: cbodonnell
 spec:
   encryptedData:
-    PASSWORD: AIBlmbCgJXq8GpqcYdrxVsfPS0cAcxwemf47sUea513IVDJLFmvAS2bEkXyiFRi9n5fJsa5DV//+xfZ00V7HkPC5mW+KLLuIX592VqCUDO4URngVIjPNK/se77zlXEZuVuonmFbkV+SjT6DhNWEbJZIQKZ+zBSN38zTtvs0d+eL1rtcqfFJWrUZ8bkNqdKWjHcgt1WULE2QPCOj07RM=
-    USER_NAME: AIArPn8I9S9cscYVrAOPxMLXPQjhBeRyA647FTLaYqs3Ak9rby9lZTgCMT9sHcrKGLHfmSH0VFnjiR2E6uQnM0klyVHB7YC3pciVNhKg3v8ndzugnOvNyYZ3QQT641WVYT+OzcLNCSLy+HYcBwqd7IDkWxRqR3IUSFhrOOcq9WPcbjD7c3e2mBw8DXESRcxfBV6M1dByyg==
+    PASSWORD: AIAMuQhx42okfTtE+RJTs9bvNHDXxD0cB1FJzDkje5stUN894QfgEuv8RVDomDUNISzsl5hm6BnKvRdb0gxRMfg09z9jop5EDuA6uFAE/RcknlhGqw4mLt6lldksFyfo9qYz7IlIv4+8z/LRLfmj5KmY61NEdxu37ZDn+ddzFDqHj7Cw+3WarvCMsBeQCeMsUwd0uFwLdZ+h0L6ewCo=
+    USER_NAME: AIDGpwje45IBjoHu5563aGjDxPw6K0UaZqy/cwuIwAoYnZhG/jUOPK4T0btUK+xEESE5N8pZsL2hMQkgreq7CxZXojvWnS3U/2Fmy1o2+2QMfacmI3AqpyZNBdGxg965+S6HAk0qFagj2/9uWxhqLX2JSVmA1KRk9UubtrVnhfNgY6oIBIH9uYhzr6zQO27q7fcl7aDRtA==
   template:
     metadata:
       creationTimestamp: null
@@ -150,7 +150,7 @@ metadata:
   labels:
     kots.io/app-slug: craigkotstest
     kots.io/backup: velero
-  name: c71cda8-v2
+  name: c71cda8
 spec:
   containerd:
     version: 1.5.x
