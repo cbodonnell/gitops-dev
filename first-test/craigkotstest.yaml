@@ -85,7 +85,7 @@ metadata:
   namespace: cbodonnell
 spec:
   encryptedData:
-    .dockerconfigjson: AICKtReKw6OGos5a1wEcaTS3aDW4BZhmRD+IpQBYNXNNXXB5OJJe2T7OPw7P3G5KbpOgwx46it2f49jkm+Hr5FiMl+olsCMf4ly0H3gxxJlOCdot93bDeShkFuf2vNNMdIfLlS2h+8NZgicSGedVlob11Sb8R4R+jRTS4hffG8lIhPHWB6sEQzO4geXf6LLVxUwI9Ry9Xyte4l2Fo9zH2w05v1bGLlqXxGiKp93vlqlcV5258LERIxEO/gxc5BHokmWBxcY+wbdT6DMbh9A/kyucH5f22YTDbl2Hdr0C+FFeEG6lSaqPoQX6Jj74K9stAoqQ+CroO1aPe2NHXkT++LobPMpc1R7xECHDJjtDs85gnjYP41BTXI6hyxLgnfAYznxAk87kYLiwgeGunOR8f50+M4FAYcKlWSoVrVBioSkIHD7nzhWr2s7OPeBr3Czh2LcbZFhEqgWDNtQ9oLSsmygMiIfJreIl+m0m9MuoefVW+x3rBVTkkwl+z56ysw==
+    .dockerconfigjson: AICDP3iflGJe9e+xPpGpTE31DvCcJKm2Ua9nQBXd68YqpHC8VYYFnqwUgZ9h+2ambsD7rsJvt+HPjbjIHzdlAfQHpJjMK94JPKvR+brNC1U88jVDbexjOIR9b9Z+rPyDqgaUSMNVMze/m4DG6L4QTmLlpsilFLQQsdIpFMq6Qvv5rhJu/IWZWosJy55JHOY6xBCT6XgyMEXvfQvlShlXf5dwJQsR6LbA1x8C0EXqupU19g45nd+VlQ7cfaXzkMu8j1yxZfSk1N/6KkMlk403U3wcUU7M3YTaRU+8PP6l5RG4bApAGcoq5O7JMJdC41deM68pp0KPvU81ngNrrquCZZbFzD8E5aXqhq/C90vnrb/oRVgqePlRj1wadKiaWQOm1CCuEYWaI4f2E96I+xK69cE0C6roIooXMu4nNyYRI0kMMlbUfGEwj9dboJ6L2ZoP3xKtsMzxJrFU/8fvJfnDwNSIuYrs9+yU420X4SxNHdojG7CmGB7K+30Wpzy7qQ==
   template:
     metadata:
       annotations:
@@ -109,7 +109,7 @@ metadata:
   namespace: cbodonnell
 spec:
   encryptedData:
-    .dockerconfigjson: AICvJL/O7CLUmckIvdIcNzsSX9HkKBNrxiu8Icm7MokvSoWx0NryB5GA05qjQmEc3gsGzYEXd48mT/OtuHhKiULKf6hwBuPEZxi4ESJ0z5k7vhJmtdva82YTtufQ/yMve3qMCkPJfQ4uIqMZYneTA5RPsfbjaOOjfo/dYKF+om7PsbegnjectGrgo2cKNpfrKC+2qGvTzw8+gwqiddJzr9dyOj5L0fR9T/bPAV/NPtnO6EKTBbt895GjnqIXpvOrUCN8FlY9Ib87yyzUMfPLR+HKE06TQv16dA8MAX/xqx36prwkAKFyWrGfmK83J/XaHTDH0W6UYviV+jSEz+KT1ij3abUV6RdpxmC9NDKk/hHW3t+mhNivNXiudpHsE2meigmFrCfnLFKNzRFQxLoMd+Kl5SyePpN+nzhzHSuhr10RJbY5FT8g9bgSsbe3FspKtqpyW+5GQZErhk7MybLVYl4+szVSIEiBtznI28bfQF/8g3HzGMtbeZUEz4+luw==
+    .dockerconfigjson: AICAuoYNJOtWbFKlvHMe1GmphAyVkaiYtkS+IpzsuRxYElqovUvlBTDZASQRRmJlArljdYcPLT7QITcBKB5AxOY+R7KeTQlmIN96YGjCgnO89/F2BIQS3e2bUzB66CYDlzL+wlDX+X4bfWmYjXlMrr1QfmWQFfeTknO7HENB7teO86teHRxrW2+MQ3TYBf1oQ8c9/6lnhyhEWFVeBzdswG+iDQiddIqevSkCBg7njimmce6a3cix2oqhMhB43CiLS6cgX8XGG6C91EL1gZASV7twgV32XB7zgWiFBQAWpBU3/hQY3OZvuubwWnXqRCHb1vA5/nnqc742dRq9nICDwqfK/PPLm8wa9RzLnAaS9gwetq4xWrz2tjWORfE/E301Ob872MTCWB/xJWhXPWr9d+4w1EOHtzH1goX8LmF3rR/OupVquCksxyZfyuGdgxKWyMWJB6Y07xgydpzemfyYB3ckkQfx09yKWt2aodjU9qSF8Ryhq+KDF2DgToO6Rw==
   template:
     metadata:
       annotations:
@@ -133,45 +133,14 @@ metadata:
   namespace: cbodonnell
 spec:
   encryptedData:
-    PASSWORD: AIAMuQhx42okfTtE+RJTs9bvNHDXxD0cB1FJzDkje5stUN894QfgEuv8RVDomDUNISzsl5hm6BnKvRdb0gxRMfg09z9jop5EDuA6uFAE/RcknlhGqw4mLt6lldksFyfo9qYz7IlIv4+8z/LRLfmj5KmY61NEdxu37ZDn+ddzFDqHj7Cw+3WarvCMsBeQCeMsUwd0uFwLdZ+h0L6ewCo=
-    USER_NAME: AIDGpwje45IBjoHu5563aGjDxPw6K0UaZqy/cwuIwAoYnZhG/jUOPK4T0btUK+xEESE5N8pZsL2hMQkgreq7CxZXojvWnS3U/2Fmy1o2+2QMfacmI3AqpyZNBdGxg965+S6HAk0qFagj2/9uWxhqLX2JSVmA1KRk9UubtrVnhfNgY6oIBIH9uYhzr6zQO27q7fcl7aDRtA==
+    PASSWORD: AIB9lx8XP+myfVExBmE606tmM3faXrmEqmPLLvcOwRU4S5OmauCG4VJTW20OiCq9JVqDSt0636z/TKmKkAuNMAtZvOAC851gMbt0VrWsl13goxoQHxgcv6yFPk5rwfNwKcMA64rzq17orOcrEQM8/8YEv56zArgfpiWohFrkVkdvBMTjQn3/DtZwvsEW3fvDteb8/HTlBZ9s5VEaGVs=
+    USER_NAME: AIA1Gey19fCtiaKTVGH2E3HhPp1uEPUaFHYswNxdYLu0XGoXyVBtuPLqpsKhJyRot9BkTtlW3D9CJRWy+NtR8ExAJ5UxQfNmWsNoB/MN0cpXh2rqMuCBkGUbO/gVaAsYSB+QX0HAQCK5baq8bcbelkNGbccWjX76fHJ4K9qRVeW9+ZpH8qq+09BHy9bhcbGJ0icJV9Y56w==
   template:
     metadata:
       creationTimestamp: null
       name: mysecret
       namespace: cbodonnell
     type: Opaque
----
-apiVersion: cluster.kurl.sh/v1beta1
-kind: Installer
-metadata:
-  annotations:
-    kots.io/app-slug: craigkotstest
-  labels:
-    kots.io/app-slug: craigkotstest
-    kots.io/backup: velero
-  name: c71cda8
-spec:
-  containerd:
-    version: 1.5.x
-  contour:
-    version: 1.21.x
-  ekco:
-    version: latest
-  kotsadm:
-    version: latest
-  kubernetes:
-    version: 1.23.x
-  longhorn:
-    version: 1.2.x
-  minio:
-    version: 2020-01-25T02-50-51Z
-  prometheus:
-    version: 0.56.x
-  registry:
-    version: 2.7.x
-  weave:
-    version: 2.6.x
 ---
 apiVersion: networking.k8s.io/v1
 kind: Ingress
