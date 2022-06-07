@@ -60,7 +60,7 @@ spec:
       - envFrom:
         - configMapRef:
             name: example-config
-        image: nginx
+        image: nginx:1.21
         name: nginx
         resources:
           limits:
@@ -85,7 +85,7 @@ metadata:
   namespace: cbodonnell
 spec:
   encryptedData:
-    .dockerconfigjson: AIA32esbW8xh8Zdn9j6u1qbs91W/LrsAksTyHPVSEgdz7fPvAPFpzsqLHmBrzTY1tSqETVcFkTWEnTCCQvuPUDCehqEWlGl88MjPKKG2vg+v4ujpYgf2zEBALR/XXLAAuIz5V6ZuwaE51wNsQdUlW/3DjxEjAcAlQ+onKA7MNCMcBPt0+JhIZyNtG4PzhPHlwRVru4XNHyDTizkExlbJ4quxQxFppDXtznAesKSZxPTzp4yoS10hDho9jSFIDwzjJg3yoU4gf3xyf7+woDmmiohpu1ZO+M/kI076X6e+ru2lCkbcQA/v0eQZiVNF2275a0GSb1yqGx54mgR0zcQ5NCWGP0IIpOwEN0u3FVcglBHdVqiCTmnTnM55qdJo8WZtPKM9Y7elIeukXE579TP2LPBBEkwKrm/UpUqe8J30bJ9yvIAFTIQCNmBxyctiI5tV33tKC5Jhfnabtfmuy74HUqbByhabhf0a43mJevZL4i8jVcAjvsE6zbX+ogoKWw==
+    .dockerconfigjson: AIBUzACHFws9Xcxxj6E5SIP0BALMTqbqB4FgmQ7rFB25A+vJBq6jWgx8mCbuZgZ6IxeoQo6liDMi3+qKBKvTaBr2ShEB99deGrVJxoOwQ0rcV7itCZ3Ut/iQl9rQY08USxqn3sEdz298LgG9iMimYq7ZhzneFCw/pfMOsONjEu0c+SndLUX9Uv5TnQx2xxngRmkCx5YC6UQ7EFnC33iwz4nokWVDwSffssMsDQsLZvgCHgT0qQclNqI306un1HmjSVI6t8xdwTDE+sYC8mH4Ii5h21gPhUVp/rcngX3V13UKoMzWFUjWXkfSfete4tp/VsMCNasHy2eypJKjPvUS/cGiPEr+9WBrBE+UAOW02h4N/eoPOR0ZDg32X3URg3Gdw2/7BMzd2WovMgteWC8REKpAmDCnm1IMrSaDitF00/jEgR0sFeWIE0PnJXiTHHyxDniemhVsRkUrvxGxNVvAHL/KGWiku0qKyt9erkn+shmAvHbUlvP0Cs7a+V1yYw==
   template:
     metadata:
       annotations:
@@ -109,7 +109,7 @@ metadata:
   namespace: cbodonnell
 spec:
   encryptedData:
-    .dockerconfigjson: AIB7vfNfuQ6NhEpWCNffSMR0OcoOUeQeWOFflnrJWYCdYeF9iB9gP7J3iVrhtl5CAiWwMeauhYSAICorxNTIyG9D9ZZRDDxQdsoeYHt0Suemlk46/eufdjz9arvIBu2xhcSeaIYf1rVOmeOndD/iT53pFxBqpiZo/WLJ3XpMlDS6UzH4TiTbiXLrwRtBHNxm0OOIOKs3vscRtHAudzLh9S9R1PBE04hU1Vboz/OyfOjw3ZBE9SefGOvqzcdQv84ACZF9vfkp2W9ah/DMbjN6YmW0AfWZQKSfo3mOeik/sltqnOvyKR+9MZ+aIcouByMpqVkug3Kte71B09JLetSfz6gnpQr4RX8WzbWwTzciDRvhJj2LUDiMnQIlvJW6ZTbDtQLnK2tHaMMGkCI0SIk/06akoUMZT5ySSR+AcROGrAEKdb0qYZDASaNan4fZQxUkTF1f9FK6j8RY7RKWQQD6Bc5eLDuDKu2q/6YjQ+B2f+7+hJYJY71nTFECFsIHNQ==
+    .dockerconfigjson: AIAiMhINe/Ykf3Cl8Tb6nVlQOjUeK9uqb4EApF/HXgvvbvNKZPC4eV7IN45sRPrP+O3JJxUThmkfMFLNJNS2z7K6/mP90bjBKCCN9QZHaY6Xo8L2SkhCnFn9EBYSrdUAAUa5nV8k8S18XpZozRSKm5EeLJbbZ4iWh1//R/x9Q9Q9Ga0K+8DXyzAauAE9QvXX3L3l/9HDvBakI2yji+IsMXgk9SJz+rXXiWCjAt5IjwldI14dWq5pwCafQ0OXeoBJ3HF2YHyLJQG7yCPXdIwMN7UJem8jkmychQ7kWwjJF88k4enebqbYKtyYJsrH9OSX3T3/5V0kuJayKaHArR36LIRgaVblCFvMB3UxbzJXhWp9H9d+OQkwkPklFxu6+S1VCtzVNRcaO3jF3TVd7tRHCJZgEwR4MxWdPkFWOIH7H8tl2X18iyhq+Nn3/X7T/f3cgQ235UPd/Bpm0gQR2pVuAuk1+OAAFgaRzZogfkgjKED0QuOHSkhswbpUrILoSQ==
   template:
     metadata:
       annotations:
@@ -133,14 +133,50 @@ metadata:
   namespace: cbodonnell
 spec:
   encryptedData:
-    PASSWORD: AIAWC/fQTAUfAqGLJ4HUCaxvtvYu+JqK1hbM9BN6yRcAWeqaLhos2HOlunfznas/vLElKYKi/U1IxbcoghUF43ToxOcrDlQ572t+lEK3maYxd6shaIHHb2BkpVNcaLcBFCkHJiaf4t66vn2KHF35ExqT8O6esN0r0yr3DSg710Op1Cou+TqZwzQisR1LHwxICrL9BP+fbCJdlbFf35s=
-    USER_NAME: AIABXHricR5RporEmS7YYSx7lvit/o66+Z1vzDpp/OcC6chJr7sy+QRfPC/c7LC21ts3x3xpHAiiUUhmZCSFHeH8RKV58k8QDmiJOiMVPAzQ3jPCnr3PNw+NMMj6jpqnyYf98zrE4zFl/6NELWQ2ioQyxH7QxYeVjSM5XlyLuza+l4d1vJeQComAHmHwgErZ7DRbSLcZQQ==
+    PASSWORD: AICrLGlYJQEn+VTVi0oaa9Jx5Cc9rxRqFSRvUc8n2NyoLwEUgwSJZFung6DCoHjP6Oo3Vqq4RXkmzuapdWoZp4nWwsqYCFqPUX1oJw8IYZ54Ua7r83MMUruph4Qei7PNCgxT6Om45rujuyZtVlnoCcRVSJx7kFdRQ99ClQx5bhxObxUp3cCRTo0R8lFH3Y1Z/pXYLAn4YGiWsSxEMH0=
+    USER_NAME: AIBq9tR6u9LW8aT2buglfKLHXJCJfwOCMKK5KUxwKsT0aMmR2e7791wP3B82idQoo2qrTJJjWctso+89uDtf2lKgerBzlNoZnEEbyfl0dsxuqebvc0SOQjupVorFeh4OOSUKw6J070A1cJwAQUFCOhgzsIOzIILpGytReCGZyQ4lWu4xGuijtSDyMAt1JK7XktiE0+U/8Q==
   template:
     metadata:
       creationTimestamp: null
       name: mysecret
       namespace: cbodonnell
     type: Opaque
+---
+apiVersion: cluster.kurl.sh/v1beta1
+kind: Installer
+metadata:
+  annotations:
+    kots.io/app-slug: craigkotstest
+  labels:
+    kots.io/app-slug: craigkotstest
+    kots.io/backup: velero
+  name: craigkotstest-unstable-0.1.54
+spec:
+  containerd:
+    version: 1.5.11
+  contour:
+    version: 1.21.0
+  ekco:
+    version: 0.19.2
+  kotsadm:
+    applicationSlug: craigkotstest/unstable
+    applicationVersionLabel: 0.1.54
+    version: 1.71.0
+  kubernetes:
+    version: 1.23.6
+  kurl:
+    additionalNoProxyAddresses: []
+    installerVersion: v2022.06.01-0
+  longhorn:
+    version: 1.2.4
+  minio:
+    version: 2020-01-25T02-50-51Z
+  prometheus:
+    version: 0.56.2-35.2.0
+  registry:
+    version: 2.7.1
+  weave:
+    version: 2.6.5
 ---
 apiVersion: networking.k8s.io/v1
 kind: Ingress
