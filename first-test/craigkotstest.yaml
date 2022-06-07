@@ -60,7 +60,7 @@ spec:
       - envFrom:
         - configMapRef:
             name: example-config
-        image: nginx:1.21
+        image: nginx:1.22
         name: nginx
         resources:
           limits:
@@ -85,7 +85,7 @@ metadata:
   namespace: cbodonnell
 spec:
   encryptedData:
-    .dockerconfigjson: AICDP3iflGJe9e+xPpGpTE31DvCcJKm2Ua9nQBXd68YqpHC8VYYFnqwUgZ9h+2ambsD7rsJvt+HPjbjIHzdlAfQHpJjMK94JPKvR+brNC1U88jVDbexjOIR9b9Z+rPyDqgaUSMNVMze/m4DG6L4QTmLlpsilFLQQsdIpFMq6Qvv5rhJu/IWZWosJy55JHOY6xBCT6XgyMEXvfQvlShlXf5dwJQsR6LbA1x8C0EXqupU19g45nd+VlQ7cfaXzkMu8j1yxZfSk1N/6KkMlk403U3wcUU7M3YTaRU+8PP6l5RG4bApAGcoq5O7JMJdC41deM68pp0KPvU81ngNrrquCZZbFzD8E5aXqhq/C90vnrb/oRVgqePlRj1wadKiaWQOm1CCuEYWaI4f2E96I+xK69cE0C6roIooXMu4nNyYRI0kMMlbUfGEwj9dboJ6L2ZoP3xKtsMzxJrFU/8fvJfnDwNSIuYrs9+yU420X4SxNHdojG7CmGB7K+30Wpzy7qQ==
+    .dockerconfigjson: AICRvxYQNVl2doD0lXiCgQLVvBzMGwSk9R+10FY9Veu5HSK8XFUgBq+u/CZBf5/h4fJ3V3myANxbtwU/EWi2x6M3P9RQ+7SgdZZgCP8eRu4Yti1JqwTzCQuO4TwiBkKGqn6EZ4pKdIFyQDT8oF+kfXMrOPX775zzHN7fh2Y0z/qK3PyuoW269vbKTO1Quuzpt/19lHX+g8U/5dugBitygcA3Bl5f1HwuSJz8YRJ8DqZXPTeCdqSWshXzIF2c/XYB6WjyUx6kpK2aIKCpGid+4iYmTMm96epysdC9nEXZUNlGsXfnrmqrM5xPUb0KYaB+0gE3OzVY3djzD9GI8eW6siqvqePXRvJc3b5i+wg5j4yTSdQ4qA8/rMJ/oWchHejH/XZsWHUc/MuZSD6EMMBXP4eKEL9VAYoBwvna4+iUa/OxDtru29j/QvA6UKzZXLaPXESUADmAKnd57rwoGKliIBqr6C3yumXVaTvs0+JMweVhFFv4WnwKWNm/hW46hA==
   template:
     metadata:
       annotations:
@@ -109,7 +109,7 @@ metadata:
   namespace: cbodonnell
 spec:
   encryptedData:
-    .dockerconfigjson: AICAuoYNJOtWbFKlvHMe1GmphAyVkaiYtkS+IpzsuRxYElqovUvlBTDZASQRRmJlArljdYcPLT7QITcBKB5AxOY+R7KeTQlmIN96YGjCgnO89/F2BIQS3e2bUzB66CYDlzL+wlDX+X4bfWmYjXlMrr1QfmWQFfeTknO7HENB7teO86teHRxrW2+MQ3TYBf1oQ8c9/6lnhyhEWFVeBzdswG+iDQiddIqevSkCBg7njimmce6a3cix2oqhMhB43CiLS6cgX8XGG6C91EL1gZASV7twgV32XB7zgWiFBQAWpBU3/hQY3OZvuubwWnXqRCHb1vA5/nnqc742dRq9nICDwqfK/PPLm8wa9RzLnAaS9gwetq4xWrz2tjWORfE/E301Ob872MTCWB/xJWhXPWr9d+4w1EOHtzH1goX8LmF3rR/OupVquCksxyZfyuGdgxKWyMWJB6Y07xgydpzemfyYB3ckkQfx09yKWt2aodjU9qSF8Ryhq+KDF2DgToO6Rw==
+    .dockerconfigjson: AICIJFOrkC6fnUuN2GDF4Yb88/GksGVuYFzxp52waNKS3l0WcVI5vd0lHopONPIW8JRYTMbuEOK3SeiBCw5R6oFNejmhKs9XSrDDg3rFrb9HfGDeMPYDqalL6B13DNMOqjn/vcb06Xl7mXsNXIgWgCuZanenYHNe/bVKrvPy63BVm1zwqKmT47Om0FVBuv+YTqnp7G8JqWkwhaCuIPMXnMwSvbwJAE8nH4BvOs6oz/pqBrGuYT78HDRfdhyauQq3df4G9nzHg42hQ/ujbumRD+0UJQHZ62ScBX2YSzsHLVI2WS2pCWJNe58ZElyno1oK6W5OpWJbV26NTfyZR+sF1a9WuHOuol2FvSY7NHVN2nU2X2WqyTQ9c8DLY9C+gldvqU4CmqPZc68UkynoxUph+hNbgBIRRU1WsNllH9FN1crIuyddBzA0+WDhNWZ42pfVEGks11audfOOsbgX0TYIbejAcvaZ5s7J52gDStW7Yma8d06vNCuTocY7WGn/HA==
   template:
     metadata:
       annotations:
@@ -133,8 +133,8 @@ metadata:
   namespace: cbodonnell
 spec:
   encryptedData:
-    PASSWORD: AIB9lx8XP+myfVExBmE606tmM3faXrmEqmPLLvcOwRU4S5OmauCG4VJTW20OiCq9JVqDSt0636z/TKmKkAuNMAtZvOAC851gMbt0VrWsl13goxoQHxgcv6yFPk5rwfNwKcMA64rzq17orOcrEQM8/8YEv56zArgfpiWohFrkVkdvBMTjQn3/DtZwvsEW3fvDteb8/HTlBZ9s5VEaGVs=
-    USER_NAME: AIA1Gey19fCtiaKTVGH2E3HhPp1uEPUaFHYswNxdYLu0XGoXyVBtuPLqpsKhJyRot9BkTtlW3D9CJRWy+NtR8ExAJ5UxQfNmWsNoB/MN0cpXh2rqMuCBkGUbO/gVaAsYSB+QX0HAQCK5baq8bcbelkNGbccWjX76fHJ4K9qRVeW9+ZpH8qq+09BHy9bhcbGJ0icJV9Y56w==
+    PASSWORD: AIBYTqBmZXxVp2vO3/PLCT5kD5KkcL8xlTix8yxvESswMOM+d+6P5md/liNT1eaxzQ0AA8Q+HfM0z6/zSLOpp5rYFMjQLdJm8ZGO9Q+m9Hc+QGqdwAdDXMVAsmX4UgwpcI6nbwfFWO/rDZiKGOW+Y5YQ+mdbelzo9PNIfSOeNUhoqB0fr0kmIHiGNU7twWtEfatbYbyPVJ7XTBsVibw=
+    USER_NAME: AIABnxOlDCSjwxK2CsEboP4gbv37EzD443KKAZBdhmHNHK11zS5bS9mY2QxWi2eZ1edHmV6Plkl44FSF+479pp+mY7uwYGdYuTITkGn8nVVNnK/s3pX/fLqEbl9uQziwpuNlYOt/Vt1zD4fZYivplrsE3jugpMPJ04BY3oi3RJ5Zp0oU54tPWekTR/LYFVxICSVx4qmJEg==
   template:
     metadata:
       creationTimestamp: null
